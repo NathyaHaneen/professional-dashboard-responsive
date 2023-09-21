@@ -1,0 +1,620 @@
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    background-color: rgb(238, 238, 238);
+    font-size: 18px;
+    font-family: 'Montserrat';
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: unset;
+}
+a {
+    text-decoration: none;
+    color: #828282;
+    font-size: 18px;
+}
+.container {
+    margin: 0 auto;
+    width: 90%;
+}
+/* .page-title {
+    font-weight: bold;
+    font-size: 25px;
+} */
+.left-container {
+    width: 28%;
+    background-color: white;
+    border-radius: 12px;
+    padding: 15px;
+    float: left;
+    /* height: 600px; */
+}
+.left-img img {
+    width: 100%;
+    border-radius: 12px;
+}
+/* .left-content div {
+    height: 12.3%;
+} */
+div h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.content-font {
+    color: #828282;
+}
+div span {
+    margin-right: 10px;
+}
+div p {
+    color: grey;
+}
+.top-left {
+    width: 48%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    float: left;
+}
+.top-left div {
+    margin: 10px auto;
+}
+.responsive-name, .responsive-contact, .responsive-info {
+    font-size: 16px;
+    /* margin-inline-end: 20px; */
+    margin: 0.5em;
+}
+.skill p {
+    width: 30%;
+    float: left;
+    padding: 5px;
+    font-size: 14px;
+}
+.bar-graph {
+    border: 5px solid #c4c1c1;;
+    width: 70%;
+    border-radius: 10px;
+    float: left;
+    position: relative;
+    
+}
+section.right-container {
+    width: 70%;
+    float: right;
+}
+.top-right {
+    width: 48%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    float: right;
+}
+.top-right div {
+    margin: 10px auto;
+}
+.progress {
+    background-color: #5ea8f0;
+    margin: 0 !important;
+    z-index: 5;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    padding: 5px 0;
+    border-radius: 5px;
+    width: 0%;
+}
+.progress60 {
+    animation-name: progress60;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes progress60 {
+    from {width: 0;}
+    to {width: 60%}
+}
+.progress50 {
+    animation-name: progress50;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+}
+@keyframes progress50 {
+    from {width: 0;}
+    to {width: 50%}
+}
+.progress90 {
+    animation-name: progress90;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0.4s;
+}
+@keyframes progress90 {
+    from {width: 0;}
+    to {width: 90%}
+}
+.progress65 {
+    animation-name: progress65;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0.6s;
+}
+@keyframes progress65 {
+    from {width: 0;}
+    to {width: 65%}
+}
+.progress85 {
+    animation-name: progress85;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0.8s;
+}
+@keyframes progress85 {
+    from {width: 0;}
+    to {width: 85%}
+}
+.progress80 {
+    animation-name: progress80;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+@keyframes progress80 {
+    from {width: 0;}
+    to {width: 80%}
+}
+.progress75 {
+    animation-name: progress75;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+@keyframes progress75 {
+    from {width: 0;}
+    to {width: 75%}
+}
+.left-container:hover, .top-left:hover, .top-right:hover, .hobbies-img img:hover, .experience:hover, .blog-img:hover, .blog:hover {
+        box-shadow: 3px 9px 15px lightgrey;
+        transition: all 0.2s linear;
+}
+.text-shadow {
+    text-shadow: 1px 1px 5px #ffce92;
+}
+.project-bar {
+    float: left;
+    width: 100%;
+    padding: 22px;
+    background-color: white;
+    margin: 50px 0 0 0px;
+    /* top: 422px; */
+    border-radius: 12px;
+}
+.blog-img img {
+    border-radius: 12px;
+    width: 40%;
+    /* height: 100%; */
+}
+.blog-img {
+    float: left;
+    margin: 35px 0px 0 0px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    width: 100%;
+    /* height: 270px; */
+}
+.box-content {
+    float: right;
+    width: 100%;
+    margin-top: 20px;
+}
+.hashtag {
+    font-size: 16px;
+    bottom: 0;
+    float: right;
+    width: 55%;
+    margin-top: 10;
+    color: #4F4F4F;
+}
+.blog-name {
+    font-size: 24px;
+    color: black;
+    font-family: montserrat;
+    font-weight: 500;
+    line-height: 29px;
+    margin-top: 20px;
+}
+.blog h2 {margin-bottom: 0em;color: #E0E0E0;}
+.blog-box p {
+    margin-bottom: 0.5em;
+}
+.blog-box h1 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+.hashtag button {
+    border: 1px solid #2F80ED;
+    border-radius: 12px;
+    background-color: white;
+    font-size: 18px;
+    color: #2F80ED;
+    float: left;
+    padding: 10px;
+    width: 30%;
+    margin-top: 2em;
+    margin-right: 20px;
+}
+.hashtag button:hover {
+    background-color: #2F80ED;
+    color: white;
+    transition: all 0.2s linear;
+}
+.experience, .hobbies {
+    width: 28%;
+    background-color: white;
+    border-radius: 12px;
+    padding: 15px;
+    float: left;
+    /* height: 550px; */
+    margin-top: 50px;
+}
+.exp-img {
+    /* padding: 10px; */
+    width: 18%;
+    float: left;
+}
+.exp-img img {
+    /* width: 25%; */
+    /* height: 84px; */
+    /* float: left; */
+    /* margin-top: 0px; */
+    width: 100%;
+}
+.heading {
+    font-size: 24px;
+    font-family: montserrat;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.exp-role {
+    font-size: 16px;
+    margin-top: 10px;
+    color: black;
+    font-weight: 500;
+}
+.exp-duration {
+    font-size: 14px;
+    font-weight: 500;
+}
+.exp-content {
+    margin: 0 0 20px 5%;
+    float: left;
+    width: 70%;
+    font-weight: 500;
+    font-size: 16px;
+}
+.exp-content h2 {
+    margin-bottom: 0.5em;
+}
+.role-time, .role-time2 {
+    float: right;
+    width: 70%;
+}
+.exp-img2 img {
+    width: 84px;
+    float: left;
+    /* margin-top: 75px; */
+}
+.role-time2, .role-time3 {
+    margin-top: 20px;
+}
+.exp-img3 img {
+    width: 84px;
+    float: left;
+    margin-top: 65px;
+}
+.hobbies {
+    margin-top: 50px;
+}
+.hobbies-img {
+    margin-top: 20px;
+}
+.hobbies-img img {
+    width: 100%;
+    border-radius: 12px;
+}
+.blog-bar {
+    float: left;
+    width: 100%;
+    padding: 22px;
+    background-color: white;
+    margin: 50px 0 0 0px;
+    /* top: 422px; */
+    border-radius: 12px;
+}
+.blog {
+    background-color: white;
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 12px;
+    padding: 20px 0 20px 10px;
+}
+.css-title {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+    width: 22%;
+}
+.dev-link ul {
+    width: 100%;
+    float: left;
+}
+.dev-link ul li {
+    color: #2F80ED;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+.css-img {
+    width: 444px;
+    float: right;
+    padding: 20px 0 20px 10px;
+    margin-top: 0;
+    
+}
+.css-img img {
+    width: 100%;
+    border-radius: 12px 0 0 0;
+    margin-top: 0;
+}
+.hashtag h2 {
+    margin-top: 1em;
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+}
+.hashtag span, .hashtag h2, .hashtag p {
+    margin-bottom: 1em;
+}
+.hobby-row h2, .hobby-row p {
+    margin-top: 0.5em;
+}
+@media only screen and (max-width: 600px) {
+.container {
+    width: 90%;
+}
+.left-container {
+    width: 100%;
+    /* height: 75%; */
+    position: relative;
+}
+.left-img {
+    width: 100%
+}
+.left-img img {
+    float: left;
+}
+.left-content {
+    float: right;
+}
+section.right-container {
+    width: 100%;
+}
+.top-left, .top-right{
+    width: 100%;
+    margin-top: 30px;
+}
+.experience {
+    width: 100%;
+    margin-top: 30px;
+}
+.exp-img img, .exp-img2 img, .exp-img3 img {
+    /* width: 100%; */
+}
+.role {
+    /* margin-top: 20px; */
+}
+.role h2, .role h3, .role p {
+    /* float: right; */
+    /* width: 72%; */
+}
+.hobbies {
+    width: 100%;
+    margin-top: 30px;
+}
+.blog {
+    padding: 10px 0 10px 10px;
+}
+.css-img {
+    width: 100%;
+    padding-right: 20px;
+}
+.css-img img {
+    border-radius: 12px 12px 12px 12px;
+}
+.css-title {
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+.responsive-name, .responsive-contact, .responsive-info {
+    font-size: 16px;
+    /* margin-inline-end: 20px; */
+    margin: 0.5em;
+}
+.box-content {
+    font-size: 14px;
+    margin-top: 10px;
+}
+.button, .blog-name {
+    margin-top: 10px;
+}
+.blog-img {
+    /* height: 75%; */
+    margin-top: 30px;
+}
+.hashtag {
+    width: 100%;
+    margin-top: 10;
+}
+.hashtag span {
+    font-size: 12px;
+}
+.blog-img img {
+    width: 100%;
+}
+.project-bar, .blog-bar {
+    margin-top: 30px;
+}
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .container {
+        width: 85%;
+    }
+    .left-container {
+        width: 100%;
+        /* height: 34%; */
+        position: relative;
+        
+    }
+    .left-img {
+        width: 35%;
+        /* height: 100%; */
+        float: left;
+    }
+    .left-img img {
+        float: left;
+    }
+    .left-content {
+        float: left;
+        position: absolute;
+    }
+    section.right-container {
+        width: 100%;
+    }
+    .top-left, .top-right{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .experience {
+        width: 100%;
+    }
+    .role-time {
+        margin-top: 20px;
+    }
+    .role-time2, .role-time3 {
+        margin-top: 70px;
+    }
+    .hobbies {
+        width: 100%;
+    }
+    .blog {
+        padding: 10px 0 10px 10px;
+    }
+    .blog-title {
+        width: 100%;
+        float: left;
+    }
+    .css-img {
+        width: 100%;
+        padding-right: 20px;
+    }
+    .css-img img {
+        border-radius: 12px 12px 12px 12px;
+    }
+    .css-title {
+        width: 100%;
+        margin: 10px 0 10px 0;
+    }
+    .responsive-name, .responsive-contact, .responsive-info {
+    margin-left: 47%;
+    font-size: 16px;
+    /* margin-inline-end: 20px; */
+    margin-bottom: 0.5em;
+    }
+    .box-content {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .button, .blog-name {
+        margin-top: 10px;
+    }
+    .blog-img {
+        /* height: 280px; */
+    }
+    .hashtag span {
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+    .left-container {
+        width: 100%;
+        position: relative;
+    }
+    .left-img {
+        width: 25%;
+    }
+    .left-img img {
+        float: left;
+    }
+    .left-content {
+        float: left;
+        position: absolute;
+    }
+    section.right-container {
+        float: left;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .experience {
+        width: 55%;
+        margin-right: 30px;
+    }
+    .hobbies {
+        width: 40%;
+    }
+    .responsive-name {
+    float: left;
+    width: 30%;
+    margin-left: 27%;
+    }
+    .responsive-contact {
+        float: left;
+    }
+    .responsive-info {
+        width: 73%;
+        float: right;
+        margin-top: 50px;
+    }
+    .blog h1, .blog-box h2, .blog-box p {
+        margin-bottom: 0.5em;
+    }
+}
